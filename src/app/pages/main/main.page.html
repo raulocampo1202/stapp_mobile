@@ -1,0 +1,22 @@
+<ion-split-pane contentId="menu-content" when="xs" [disabled]="true" (ionSplitPaneVisible)="onSplitPaneVisible(event)">
+  <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+    <ion-content>
+      <ion-list-header>Default</ion-list-header>
+      <ion-avatar class="ion-margin-start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y" />
+      </ion-avatar>
+      <ion-list>
+        <ion-item>
+            <ion-label>Home</ion-label>
+            <ion-icon name="home" slot="start"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    <ion-footer class="ion-no-border" >
+      <ion-toolbar>
+        <ion-note slot="end">v0.0</ion-note>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-menu>
+  <ion-router-outlet id="menu-content"></ion-router-outlet>
+</ion-split-pane>
